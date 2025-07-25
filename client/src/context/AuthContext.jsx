@@ -26,7 +26,7 @@ export const AuthProvider = ({ children }) => {
       const response = await request({
         endpoint: "/user",
       });
-      console.log(response);
+
       if (response?.status === 200 && response?.data) {
         setAuth((prev) => ({
           ...prev,
